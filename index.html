@@ -24,12 +24,12 @@
 
 //partial helper
  <script id="recipe-details-partial" type="text/x-handlebars-template">
-   
-   <ul>
-     {{#each ingredients}}
-     <li>{{name}}</li>
-     {{/each}}
-   </ul>
+   <p id="recipeDescription">{{description}}</p>
+     <ul>
+       {{#each ingredients}}
+       {{ displayIngredient this }}
+       {{/each}}
+     </ul>
  </script>
 
 
