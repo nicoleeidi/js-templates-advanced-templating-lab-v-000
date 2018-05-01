@@ -3,10 +3,9 @@ function init() {
 }
 
 
-Handlebars.registerHelper('display_ingredient', function() {
-display each ingredient within the each block
-
-})
+Handlebars.registerHelper('displayIngredient', function(ingredient) {
+    return new Handlebars.SafeString('<li name="ingredientsList">' + ingredient + '</li>')
+  })
 
 document.addEventListener("DOMContentLoaded", function(event) {
   init()
