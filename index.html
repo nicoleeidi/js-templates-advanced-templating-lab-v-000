@@ -9,19 +9,7 @@
   <body>
     <main id="main">
 
-      <script id="recipe-form-template" type="text/x-handlebars-template">
-     <form id="recipe-form" onsubmit="{{submitAction}};return false;">
-       {{> recipeFormPartial }}
-     </form>
-   </script>
-
-     <script id="recipe-template" type="text/x-handlebars-template">
-       <article>
-       <header><h2 id="nameHeader">{{name}}</h2></header>
-       <div>{{> recipeDetailsPartial }}</div>
-       <footer><a href="#" onclick="displayEditForm();">Edit Recipe</a></footer>
-     </article>
-     </script>
+      
 
     </main>
     <script src="node_modules/handlebars/dist/handlebars.min.js"></script>
